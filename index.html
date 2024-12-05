@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz">
+            <div class="quiz-header">
+                <h1>Coding Quiz Challenge</h1>
+                <div class="stats">
+                    <div class="timer"><i class="fas fa-clock"></i> Time: <span id="time">60</span>s</div>
+                    <div class="score-display">Score: <span id="current-score">0</span></div>
+                </div>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress" id="progress-fill"></div>
+            </div>
+            
+            <div class="quiz-content">
+                <div id="question-container">
+                    <div class="question-number">Question <span id="questionNumber">1</span> of 5</div>
+                    <div id="question"></div>
+                    <pre id="code-snippet" class="hidden"></pre>
+                </div>
+                <div id="choices" class="choices"></div>
+                <div id="feedback" class="feedback hidden"></div>
+            </div>
+
+            <button id="next" class="btn hidden">Next Question <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="result" class="hidden">
+            <div class="result-content">
+                <i class="fas fa-trophy result-icon"></i>
+                <h2>Quiz Complete!</h2>
+                <p class="final-score">Your score: <span id="score">0</span> out of 5</p>
+                <div id="message" class="result-message"></div>
+                <button id="retry" class="btn"><i class="fas fa-redo"></i> Try Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
